@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:insomina/pages/indouction.dart';
+import 'package:insomina/pages/main_menu.dart';
 
 class HomePage extends StatefulWidget {
+  static final String idScreen = 'HomePage';
   HomePage({Key key}) : super(key: key);
 
   @override
@@ -53,7 +56,9 @@ class _HomePageState extends State<HomePage> {
                   'Yes',
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
-                onPressed: () {}),
+                onPressed: () {
+                  Navigator.pushNamed(context, Indrouction.idScreen);
+                }),
             RaisedButton(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(
@@ -64,7 +69,9 @@ class _HomePageState extends State<HomePage> {
                   'No',
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
-                onPressed: () {}),
+                onPressed: () {
+                  Navigator.pushNamed(context, MainManu.idScreen);
+                }),
           ],
         ),
       ),
