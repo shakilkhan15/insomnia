@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:insomina/pages/home_page.dart';
 import 'package:insomina/pages/indouction.dart';
 import 'package:insomina/pages/main_menu.dart';
+import 'package:insomina/pages/snacks/snack_menu.dart';
+import 'package:insomina/pages/sounds/sound_menu.dart';
 import 'package:insomina/pages/test/test_info.dart';
 import 'package:insomina/pages/test/test_section.dart';
 import 'package:insomina/pages/treatments/teatment_info.dart';
@@ -29,6 +31,8 @@ class MyApp extends StatelessWidget {
         TreatmentInfo.idScreen: (BuildContext context) => TreatmentInfo(),
         TestInfo.idScreen: (BuildContext context) => TestInfo(),
       TestSection.idScreen: (BuildContext context) => TestSection(),
+       SoundMenu.idScreen: (BuildContext context) => SoundMenu(),
+        SnackMenu.idScreen: (BuildContext context) => SnackMenu(),
       },
     );
   }

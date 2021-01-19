@@ -41,7 +41,7 @@ class _TestSectionState extends State<TestSection> {
                   decoration: BoxDecoration(color: Color(0xff246587)),
                   child: Center(
                     child: Text(
-                      '${cureentIndex}/${data.length}',
+                      '${cureentIndex + 1}/${data.length}',
                       style: TextStyle(
                           fontSize: 16,
                           color: Colors.white,
@@ -59,7 +59,13 @@ class _TestSectionState extends State<TestSection> {
                             isFinsh: isFinish,
                             isCorrenct: isCorrect,
                             onClick: () {
-                              if (cureentIndex < data.length) {
+                              if (cureentIndex == (data.length - 1)) {
+                                setState(() {
+                                  // cureentIndex = 0;
+                                  // isNext = false;
+                                  Navigator.pop(context);
+                                });
+                              } else {
                                 setState(() {
                                   cureentIndex++;
                                   isNext = false;
@@ -73,7 +79,7 @@ class _TestSectionState extends State<TestSection> {
                             choices: e.answers,
                             question: e.title,
                             onClick: (c) {
-                              if (cureentIndex == data.length) {
+                              if (cureentIndex == (data.length - 1)) {
                                 setState(() {
                                   selectedItem = c;
                                   if (c == e.orginalAnswer) {
@@ -81,6 +87,7 @@ class _TestSectionState extends State<TestSection> {
                                   } else {
                                     isCorrect = false;
                                   }
+                                  isNext = true;
                                   isFinish = true;
                                 });
                               } else {
