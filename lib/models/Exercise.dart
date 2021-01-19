@@ -2,25 +2,71 @@ class Exercise {
   String name;
   String description;
   String video_url;
+  String base_img;
   List<String> images;
 
-  Exercise({this.description, this.name, this.images, this.video_url});
+  Exercise(
+      {this.description,
+      this.base_img,
+      this.name,
+      this.images,
+      this.video_url});
 }
 
 List<Exercise> exercises = [
   Exercise(
-    name: "Arabic",
-    description: """
+      name: "Arabic",
+      description: """
   Activities that get your heart rate up, such as running, brisk walking, cycling, and swimming, have been shown to improve sleep and battle insomnia. Even small bouts, such as 10 minutes, may help, though the goal is to get at least 150 minutes of moderate-intensity (or 75 minutes of vigorous-intensity) aerobic exercise each week.
 
   """,
-    images: [
-      "assets/images/Pictuer9.jpg",
-      "assets/images/Pictuer10.jpg",
-      "assets/images/Pictuer11.jpg",
-      "assets/images/Pictuer12.jpg"
-    ],
+      images: [
+        "assets/images/Picture19.jpg",
+        "assets/images/Picture10.jpg",
+        "assets/images/Picture11.jpg",
+        "assets/images/Picture12.jpg"
+      ],
+      base_img: "assets/images/Picture13.png",
+      video_url:
+          "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyA9LwGwC_HQ%26fbclid%3DIwAR2hx3ZfhVaBNIcLkjfCLal2yf3h9AToFLOkHd-ACC36wd4ikIWAwI7Ybg8&h=AT0pCxPgwAOxZdUI9baqkamnL2Z7J_rChqymhEMJd-sK8q3JBd0oSp2oKCs8N1NNCrK-HspqzkYhoEq_mHJQdXSlVuALU-84IS6B7jDi4mIV_FICV3--tgTEj_MmIzI9wkCOVHwXSC8"),
+  Exercise(
+      name: "Strength Training",
+      description: """
+Building muscle has been shown to improve the quality of sleep, and it can also help you fall asleep faster and wake up less frequently throughout the night.  So try doing exercises like shoulder presses, bicep curls, tricep dips, squats, lunges, calf raises, sit-ups, and push-ups that will make you stronger.
 
-  )
+  """,
+      images: [
+        "assets/images/Picture3.jpg",
+        "assets/images/Picture4.jpg",
+        "assets/images/Picture5.jpg"
+      ],
+      base_img: "assets/images/Picture14.png",
+      video_url:
+          "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyA9LwGwC_HQ%26fbclid%3DIwAR2hx3ZfhVaBNIcLkjfCLal2yf3h9AToFLOkHd-ACC36wd4ikIWAwI7Ybg8&h=AT0pCxPgwAOxZdUI9baqkamnL2Z7J_rChqymhEMJd-sK8q3JBd0oSp2oKCs8N1NNCrK-HspqzkYhoEq_mHJQdXSlVuALU-84IS6B7jDi4mIV_FICV3--tgTEj_MmIzI9wkCOVHwXSC8"),
+  Exercise(
+      name: "Yoga",
+      description: """
+Yoga’s relaxing poses and stretches, as well as the calming breathing exercises that accompany them, may be especially helpful if stress is what’s keeping you from falling asleep. Those with insomnia who do yoga daily for eight weeks are likely to fall asleep faster and increase the amount of time that they spend sleeping.
 
+  """,
+      images: [
+        "assets/images/Picture1.jpg",
+        "assets/images/Picture2.jpg",
+      ],
+      base_img: "assets/images/Picture15.png",
+      video_url:
+          "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyA9LwGwC_HQ%26fbclid%3DIwAR2hx3ZfhVaBNIcLkjfCLal2yf3h9AToFLOkHd-ACC36wd4ikIWAwI7Ybg8&h=AT0pCxPgwAOxZdUI9baqkamnL2Z7J_rChqymhEMJd-sK8q3JBd0oSp2oKCs8N1NNCrK-HspqzkYhoEq_mHJQdXSlVuALU-84IS6B7jDi4mIV_FICV3--tgTEj_MmIzI9wkCOVHwXSC8"),
+  Exercise(
+      name: "Meditations",
+      description: """
+Meditation can be a great tool for those looking who are for an all-natural, medication-free way to treat insomnia. In fact, meditation has even been shown to help reduce the use of sleeping pills. The practice likely improves insomnia symptoms by reducing measures of arousal in the brain.oga’s relaxing poses and stretches, as well as the calming breathing exercises that accompany them, may be especially helpful if stress is what’s keeping you from falling asleep. Those with insomnia who do yoga daily for eight weeks are likely to fall asleep faster and increase the amount of time that they spend sleeping.
+
+  """,
+      images: [
+        "assets/images/Picture6.jpg",
+        "assets/images/Picture7.jpg",
+      ],
+      base_img: "assets/images/Picture16.png",
+      video_url:
+          "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyA9LwGwC_HQ%26fbclid%3DIwAR2hx3ZfhVaBNIcLkjfCLal2yf3h9AToFLOkHd-ACC36wd4ikIWAwI7Ybg8&h=AT0pCxPgwAOxZdUI9baqkamnL2Z7J_rChqymhEMJd-sK8q3JBd0oSp2oKCs8N1NNCrK-HspqzkYhoEq_mHJQdXSlVuALU-84IS6B7jDi4mIV_FICV3--tgTEj_MmIzI9wkCOVHwXSC8"),
 ];

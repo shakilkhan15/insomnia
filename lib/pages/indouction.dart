@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:insomina/components/app_bar.dart';
+import 'package:insomina/pages/main_menu.dart';
 import 'package:insomina/utils/image_name.dart';
 import 'package:insomina/utils/sizes.dart';
 
@@ -16,7 +17,9 @@ class _IndrouctionState extends State<Indrouction> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+           Navigator.pushNamed(context, MainManu.idScreen);
+        },
         child: Icon(Icons.arrow_forward_ios),
         backgroundColor: Colors.white.withOpacity(.6),
       ),

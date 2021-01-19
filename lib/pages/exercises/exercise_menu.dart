@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:insomina/components/app_bar.dart';
+import 'package:insomina/models/Exercise.dart';
 import 'package:insomina/models/Snack.dart';
 import 'package:insomina/models/Sound.dart';
+import 'package:insomina/pages/exercises/exercise_itemt.dart';
+import 'package:insomina/pages/exercises/exercise_itemt.dart';
 import 'package:insomina/pages/snacks/snack_itemt.dart';
 import 'package:insomina/pages/sounds/sound_itemt.dart';
 import 'package:insomina/utils/image_name.dart';
 import 'package:insomina/utils/sizes.dart';
 
-class SnackMenu extends StatefulWidget {
-    static final String idScreen = 'SnackMenu';
-  SnackMenu({Key key}) : super(key: key);
+class ExerciesMenu extends StatefulWidget {
+  static final String idScreen = 'ExerciesMenu';
+  ExerciesMenu({Key key}) : super(key: key);
 
   @override
   _SoundSectionState createState() => _SoundSectionState();
 }
 
-class _SoundSectionState extends State<SnackMenu> {
+class _SoundSectionState extends State<ExerciesMenu> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,10 +30,9 @@ class _SoundSectionState extends State<SnackMenu> {
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Container(
-             
             child: ListView.builder(
               shrinkWrap: true,
-              itemCount: snacks.length,scrollDirection: Axis.horizontal,
+              itemCount: exercises.length,
               physics: NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
                 return InkWell(
@@ -38,15 +40,16 @@ class _SoundSectionState extends State<SnackMenu> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SnackItem(
-                            snack: snacks[index],
+                          builder: (context) => ExerciseItem(
+                            exercise: exercises[index],
                           ),
                         ));
                   },
                   child: Container(
+                    height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage(snacks[index].image_path))),
+                            image: AssetImage(exercises[index].base_img))),
                   ),
                 );
               },

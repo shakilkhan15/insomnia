@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:insomina/components/app_bar.dart';
+import 'package:insomina/pages/exercises/exercise_menu.dart';
 import 'package:insomina/pages/test/test_info.dart';
 import 'package:insomina/pages/treatments/teatment_info.dart';
 import 'package:insomina/utils/image_name.dart';
@@ -28,7 +29,7 @@ class MainManu extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                   Navigator.pushNamed(context, TestInfo.idScreen);
+                  Navigator.pushNamed(context, TestInfo.idScreen);
                 },
                 child: Container(
                   height: 200,
@@ -44,7 +45,7 @@ class MainManu extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                   Navigator.pushNamed(context, TreatmentInfo.idScreen);
+                  Navigator.pushNamed(context, TreatmentInfo.idScreen);
                 },
                 child: Container(
                   height: 200,
@@ -60,7 +61,7 @@ class MainManu extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-
+                
                 },
                 child: Container(
                   height: 200,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:insomina/components/app_bar.dart';
+import 'package:insomina/pages/exercises/exercise_menu.dart';
 import 'package:insomina/pages/snacks/snack_menu.dart';
 import 'package:insomina/pages/sounds/sound_menu.dart';
 import 'package:insomina/utils/image_name.dart';
@@ -59,7 +60,9 @@ class TreatmentInfo extends StatelessWidget {
                 height: 20,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                    Navigator.pushNamed(context, ExerciesMenu.idScreen);
+                },
                 child: Container(
                   height: 200,
                   width: 150,
