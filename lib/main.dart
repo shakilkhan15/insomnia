@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:insomina/pages/About.dart';
+import 'package:insomina/pages/Contact.dart';
+import 'package:insomina/pages/brainstormings/brainstromgin_info.dart';
 import 'package:insomina/pages/exercises/exercise_menu.dart';
 import 'package:insomina/pages/exercises/exercise_video.dart';
 import 'package:insomina/pages/home_page.dart';
@@ -39,6 +42,9 @@ class MyApp extends StatelessWidget {
         ExerciesMenu.idScreen: (BuildContext context) => ExerciesMenu(),
         ExerciseItem.idScreen: (BuildContext context) => ExerciseItem(),
         ExerciseVideo.idScreen: (BuildContext context) => ExerciseVideo(),
+        BrainStromingInfo.idScreen: (BuildContext context) => BrainStromingInfo(),
+        AboutPage.idScreen: (BuildContext context) => AboutPage(),
+        ContactPage.idScreen: (BuildContext context) => ContactPage(),
       },
     );
   }

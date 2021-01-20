@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:insomina/components/app_bar.dart';
+import 'package:insomina/pages/brainstormings/brainstromgin_info.dart';
 import 'package:insomina/pages/exercises/exercise_menu.dart';
 import 'package:insomina/pages/test/test_info.dart';
 import 'package:insomina/pages/treatments/teatment_info.dart';
@@ -61,7 +62,7 @@ class MainManu extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                
+                  Navigator.pushNamed(context, BrainStromingInfo.idScreen);
                 },
                 child: Container(
                   height: 200,

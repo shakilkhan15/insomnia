@@ -27,8 +27,7 @@ List<Exercise> exercises = [
         "assets/images/Picture12.jpg"
       ],
       base_img: "assets/images/Picture13.png",
-      video_url:
-          "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyA9LwGwC_HQ%26fbclid%3DIwAR2hx3ZfhVaBNIcLkjfCLal2yf3h9AToFLOkHd-ACC36wd4ikIWAwI7Ybg8&h=AT0pCxPgwAOxZdUI9baqkamnL2Z7J_rChqymhEMJd-sK8q3JBd0oSp2oKCs8N1NNCrK-HspqzkYhoEq_mHJQdXSlVuALU-84IS6B7jDi4mIV_FICV3--tgTEj_MmIzI9wkCOVHwXSC8"),
+      video_url:"vG_Bs0QLc3I"),
   Exercise(
       name: "Strength Training",
       description: """
@@ -42,7 +41,7 @@ Building muscle has been shown to improve the quality of sleep, and it can also 
       ],
       base_img: "assets/images/Picture14.png",
       video_url:
-          "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyA9LwGwC_HQ%26fbclid%3DIwAR2hx3ZfhVaBNIcLkjfCLal2yf3h9AToFLOkHd-ACC36wd4ikIWAwI7Ybg8&h=AT0pCxPgwAOxZdUI9baqkamnL2Z7J_rChqymhEMJd-sK8q3JBd0oSp2oKCs8N1NNCrK-HspqzkYhoEq_mHJQdXSlVuALU-84IS6B7jDi4mIV_FICV3--tgTEj_MmIzI9wkCOVHwXSC8"),
+          "mUns8O4YL5M"),
   Exercise(
       name: "Yoga",
       description: """
@@ -55,7 +54,7 @@ Yoga’s relaxing poses and stretches, as well as the calming breathing exercise
       ],
       base_img: "assets/images/Picture15.png",
       video_url:
-          "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyA9LwGwC_HQ%26fbclid%3DIwAR2hx3ZfhVaBNIcLkjfCLal2yf3h9AToFLOkHd-ACC36wd4ikIWAwI7Ybg8&h=AT0pCxPgwAOxZdUI9baqkamnL2Z7J_rChqymhEMJd-sK8q3JBd0oSp2oKCs8N1NNCrK-HspqzkYhoEq_mHJQdXSlVuALU-84IS6B7jDi4mIV_FICV3--tgTEj_MmIzI9wkCOVHwXSC8"),
+          "v7AYKMP6rOE"),
   Exercise(
       name: "Meditations",
       description: """
@@ -67,6 +66,5 @@ Meditation can be a great tool for those looking who are for an all-natural, med
         "assets/images/Picture7.jpg",
       ],
       base_img: "assets/images/Picture16.png",
-      video_url:
-          "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyA9LwGwC_HQ%26fbclid%3DIwAR2hx3ZfhVaBNIcLkjfCLal2yf3h9AToFLOkHd-ACC36wd4ikIWAwI7Ybg8&h=AT0pCxPgwAOxZdUI9baqkamnL2Z7J_rChqymhEMJd-sK8q3JBd0oSp2oKCs8N1NNCrK-HspqzkYhoEq_mHJQdXSlVuALU-84IS6B7jDi4mIV_FICV3--tgTEj_MmIzI9wkCOVHwXSC8"),
+      video_url:"k0PSUDvLi8E"),
 ];

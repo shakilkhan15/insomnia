@@ -5,11 +5,11 @@ import 'package:insomina/components/app_bar.dart';
 import 'package:insomina/models/Exercise.dart';
 import 'package:insomina/utils/image_name.dart';
 import 'package:insomina/utils/sizes.dart';
-import 'package:video_player/video_player.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class ExerciseVideo extends StatefulWidget {
   final Exercise exercise;
-   static final String idScreen = 'ExerciseVideo';
+  static final String idScreen = 'ExerciseVideo';
   ExerciseVideo({Key key, this.exercise}) : super(key: key);
 
   @override
@@ -17,16 +17,28 @@ class ExerciseVideo extends StatefulWidget {
 }
 
 class _SoundItemState extends State<ExerciseVideo> {
-  VideoPlayerController _controller;
+  YoutubePlayerController _controller;
 
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.network("https://www.youtube.com/watch?v=GHwq05NxJR8")
-      ..initialize().then((_) {
-        // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
-        setState(() {});
-      });
+    setState(() {
+       _controller = YoutubePlayerController(
+      initialVideoId: "${widget.exercise.video_url}",
+      flags: YoutubePlayerFlags(
+        autoPlay: true,
+        mute: true,
+      ),
+    );
+    });
+   
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    _controller.dispose();
   }
 
   @override
@@ -58,12 +70,16 @@ class _SoundItemState extends State<ExerciseVideo> {
                 margin: EdgeInsets.symmetric(horizontal: 20),
                 height: 250,
                 width: MediaQuery.of(context).size.width,
-                child: _controller.value.initialized
-                    ? AspectRatio(
-                        aspectRatio: _controller.value.aspectRatio,
-                        child: VideoPlayer(_controller),
-                      )
-                    : Container(),
+                child: YoutubePlayer(
+                  controller: _controller,
+                  showVideoProgressIndicator: true,
+                  progressIndicatorColor: Colors.blue,
+                  // onReady: () {
+                  //   _controller.addListener(() {
+                  //     _controller.play();
+                  //   });
+                  // },
+                ),
               ),
             ],
           ),
